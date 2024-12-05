@@ -17,8 +17,11 @@ Welcome to the **FastEndpointsDotNet** repository! This project demonstrates a m
 ---
 
 ## 📂 **Project Structure**
-📦 ProjectRoot ├── 📁 Application # Business Logic (CQRS Handlers) 
-			   ├── 📁 Domain # Core Entities & Interfaces 
-			   ├── 📁 Infrastructure # Data Access (EF Core, PostgreSQL) 
-			   ├── 📁 Presentation # FastEndpoints (API Layer) 
-			   └── 📄 Program.cs # Service Registration & Application
+
+```plaintext
+📦 ProjectRoot
+├── 📁 Application           # Business Logic (CQRS Handlers)
+├── 📁 Domain                # Core Entities & Interfaces
+├── 📁 Infrastructure        # Data Access (EF Core, PostgreSQL)
+├── 📁 Presentation          # FastEndpoints (API Layer)
+└── 📄 Program.cs            # Service Registration & Application Startup
