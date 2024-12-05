@@ -15,11 +15,4 @@
     <ProjectReference Include="..\FastEndpointsDotNet.Domain\FastEndpointsDotNet.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Employees\Command\Dtos\" />
-    <Folder Include="Features\Employees\Queries\Dtos\" />
-    <Folder Include="RepositoryInterfaces\Employees\" />
-    <Folder Include="ServiceInterfaces\Employees\" />
-  </ItemGroup>
-
 </Project>

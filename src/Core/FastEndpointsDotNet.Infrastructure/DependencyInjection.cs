@@ -1,4 +1,6 @@
 ﻿using FastEndpointsDotNet.Infrastructure.Persistence;
+using FastEndpointsDotNet.Infrastructure.RepositoryImplementations.Employees;
+using FastEndpointsDotNet.Infrastructure.ServiceImplementations.Employees;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,8 +24,8 @@ public static class DependencyInjection
         var assembliesToScan = new[]
         {
             Assembly.GetExecutingAssembly(),
-            Assembly.GetAssembly(typeof(StudentService)),
-            Assembly.GetAssembly(typeof(StudentRepository))
+            Assembly.GetAssembly(typeof(EmployeeQueryService)),
+            Assembly.GetAssembly(typeof(EmployeeRepository))
         };
         services.RegisterAssemblyPublicNonGenericClasses(assembliesToScan)
             .Where(c => c.Name.EndsWith("Service") || c.Name.EndsWith("Repository"))
