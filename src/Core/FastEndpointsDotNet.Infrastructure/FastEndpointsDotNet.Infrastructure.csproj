@@ -15,4 +15,9 @@
     <ProjectReference Include="..\FastEndpointsDotNet.Application\FastEndpointsDotNet.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="RepositoryImplementations\Employees\" />
+    <Folder Include="ServiceImplementations\Employees\" />
+  </ItemGroup>
+
 </Project>
