@@ -21,7 +21,7 @@ Welcome to the **FastEndpointsDotNet** repository! This project demonstrates a m
 ```plaintext
 📦 ProjectRoot
 ├── 📁 Core
-│   ├── 📁 FastEndpointsDotNet.Application       # Business Logic (CQRS Handlers)
+│   ├── 📁 FastEndpointsDotNet.Application      # Business Logic (CQRS Handlers)
 │   ├── 📁 FastEndpointsDotNet.Domain           # Core Entities & Interfaces
 │   └── 📁 FastEndpointsDotNet.Infrastructure   # Data Access (EF Core, PostgreSQL)
 └── 📁 Web.Api
