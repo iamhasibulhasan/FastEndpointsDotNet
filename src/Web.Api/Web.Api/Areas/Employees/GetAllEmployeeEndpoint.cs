@@ -16,7 +16,7 @@ public class GetAllEmployeeEndpoint : EndpointWithoutRequest
 
     public override void Configure()
     {
-        Get("api/employee/");
+        Get("api/employee/getall");
         AllowAnonymous();
     }
 

@@ -6,27 +6,25 @@ using MediatR;
 
 namespace Web.Api.Areas.Employees;
 
-public class CreateEmployeeEndpoint : Endpoint<CreateEmployeeDto, Result>
+public class UpdateEmployeeEndpoint : Endpoint<UpdateEmployeeDto, Result>
 {
     private readonly IMediator _mediator;
 
-    public CreateEmployeeEndpoint(IMediator mediator)
+    public UpdateEmployeeEndpoint(IMediator mediator)
     {
         _mediator = mediator;
     }
-
     public override void Configure()
     {
-        Post("api/employee/create");
+        Put("api/employee/");
         AllowAnonymous();
     }
 
-    public override async Task HandleAsync(CreateEmployeeDto req, CancellationToken ct)
+    public override async Task HandleAsync(UpdateEmployeeDto req, CancellationToken ct)
     {
         Result result;
-        var command = new CreateEmployeeCommand(req);
+        var command = new UpdateEmployeeCommand(req);
         result = await _mediator.Send(command, ct);
         await SendAsync(result, result.StatusCode, cancellation: ct);
     }
 }
-

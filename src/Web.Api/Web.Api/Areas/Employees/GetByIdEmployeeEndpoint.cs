@@ -16,7 +16,7 @@ public class GetByIdEmployeeEndpoint : Endpoint<GetByIdEmployeeEndpointRequest, 
 
     public override void Configure()
     {
-        Get("api/employee/{id}");
+        Get("api/employee/getbyid/{id}");
         AllowAnonymous();
     }
     public override async Task HandleAsync(GetByIdEmployeeEndpointRequest req, CancellationToken ct)
