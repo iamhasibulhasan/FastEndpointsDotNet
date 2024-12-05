@@ -22,9 +22,9 @@ This project demonstrates a Clean Architecture setup with **CQRS** pattern, util
 ```plaintext
 📦 ProjectRoot
 ├── 📁 Core
-│   ├── 📁 FastEndpointsDotNet.Application      # Business Logic (CQRS Handlers, MediatR)
-│   ├── 📁 FastEndpointsDotNet.Domain           # Core Entities & Interfaces
-│   └── 📁 FastEndpointsDotNet.Infrastructure   # Data Access (EF Core, PostgreSQL)
+│   ├── 📁 Application      # Business Logic (CQRS Handlers, MediatR)
+│   ├── 📁 Domain           # Core Entities & Interfaces
+│   └── 📁 Infrastructure   # Data Access (EF Core, PostgreSQL)
 └── 📁 Web.Api
-    └── 📁 FastEndpointsDotNet.Api              # FastEndpoints (API Layer)
+    └── 📁 Presentation     # FastEndpoints (API Layer)
 
