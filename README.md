@@ -3,8 +3,8 @@
 ## 🚀 **Overview**
 This project demonstrates a Clean Architecture setup with **CQRS** pattern, utilizing **FastEndpoints**, **MediatR**, **FluentValidation**, **PostgreSQL**, and **Entity Framework Core**. It's built using **.NET 9** and **C# 13**, with auto-registration of services through the `AutoRegisterDI` package.
 
-## 🚀 **Clone Repo**
-git clone https://github.com/iamhasibulhasan/FastEndpointsDotNet.git
+#### 🚀 **Clone Repo**
+        git clone https://github.com/iamhasibulhasan/FastEndpointsDotNet.git
 
 
 ## 📦 **Features**
@@ -27,3 +27,4 @@ git clone https://github.com/iamhasibulhasan/FastEndpointsDotNet.git
 │   └── 📁 FastEndpointsDotNet.Infrastructure   # Data Access (EF Core, PostgreSQL)
 └── 📁 Web.Api
     └── 📁 FastEndpointsDotNet.Api              # FastEndpoints (API Layer)
+
