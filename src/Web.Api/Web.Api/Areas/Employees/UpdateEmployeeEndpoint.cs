@@ -22,9 +22,19 @@ public class UpdateEmployeeEndpoint : Endpoint<UpdateEmployeeDto, Result>
 
     public override async Task HandleAsync(UpdateEmployeeDto req, CancellationToken ct)
     {
+        var validationResult = new UpdateEmployeeDtoValidator().Validate(req);
         Result result;
-        var command = new UpdateEmployeeCommand(req);
-        result = await _mediator.Send(command, ct);
+        if (!validationResult.IsValid)
+        {
+            result = Utility.GetValidationFailedMsg(FluentValidationHelper.GetErrorMessage(validationResult.Errors));
+            ThrowIfAnyErrors(statusCode: result.StatusCode);
+        }
+        else
+        {
+            var command = new UpdateEmployeeCommand(req);
+            result = await _mediator.Send(command, ct);
+        }
         await SendAsync(result, result.StatusCode, cancellation: ct);
+
     }
 }
