@@ -6,6 +6,10 @@ This project demonstrates a Clean Architecture setup with **CQRS** pattern, util
 #### 📝 **git clone**
         git clone https://github.com/iamhasibulhasan/FastEndpointsDotNet.git
 
+#### 📝 **docker build & run**
+        docker build -t fastendpoints-app:latest .
+        docker run -p 8080:8080 --name fastendpoints-container fastendpoints-app:latest
+
 
 ## 📦 **Features**
 - **Clean Architecture**: Maintains separation of concerns and ensures scalability.
